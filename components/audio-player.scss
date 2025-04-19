@@ -1,0 +1,16 @@
+.dy-audio-player {
+  position: fixed;
+  top: 80vh;
+  left: 20px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  .dy-button {
+    svg {
+      height: 100%;
+      width: 15px;
+    }
+  }
+}

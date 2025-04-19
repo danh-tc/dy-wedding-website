@@ -40,3 +40,25 @@ a {
     color-scheme: dark;
   }
 }
+
+
+.dy-container {
+  position: relative;
+  width: 80%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.dy-button {
+  background-color: white;
+  border: unset;
+  border-radius: 5px;
+  border: 1px solid black;
+  padding: 5px 10px;
+
+  cursor: pointer;
+  width: fit-content;
+}
