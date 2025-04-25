@@ -44,17 +44,25 @@ a {
 
 .dy-container {
   position: relative;
-  width: 80%;
-  margin: 0 auto;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
+.dy-container-full-vh {
+  height: 100vh;
+  width: 100%;
+  background-image: url("/background-img.png");
+  object-fit: contain;
+
+  @media only screen and (max-width: 767px) {
+    height: auto;
+  }
+}
+
 .dy-button {
   background-color: white;
-  border: unset;
   border-radius: 5px;
   border: 1px solid black;
   padding: 5px 10px;

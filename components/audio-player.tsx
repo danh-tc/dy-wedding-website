@@ -9,7 +9,7 @@ import "./audio-player.scss";
 interface AudioPlayerProps {
   src: string;
 }
-export default function AudioPlayer({ src }: AudioPlayerProps) {
+export default function AudioPlayer({ src }: Readonly<AudioPlayerProps>) {
   const audioRef = useRef<HTMLAudioElement>(null);
   const [volume, setVolume] = useState(1);
 
@@ -38,6 +38,15 @@ export default function AudioPlayer({ src }: AudioPlayerProps) {
 
     audio.volume = newVolume;
     setVolume(parseFloat(newVolume.toFixed(2)));
+
+    const volumeUIEl = document.querySelector(".dy-audio-player .ui");
+    if (volumeUIEl != null) {
+      volumeUIEl.classList.add("show");
+      const timeOut = setTimeout(() => {
+        volumeUIEl.classList.remove("show");
+        clearTimeout(timeOut);
+      }, 3000);
+    }
   };
 
   useEffect(() => {
@@ -47,30 +56,27 @@ export default function AudioPlayer({ src }: AudioPlayerProps) {
   }, [volume]);
   return (
     <div className="dy-audio-player">
-      <audio ref={audioRef} src={src} preload="auto" />
-      <Slider
-        aria-label="Temperature"
-        orientation="vertical"
-        valueLabelDisplay="auto"
-        defaultValue={30}
-      />
-      <button className="dy-button" onClick={() => changeVolume("up")}>
-        <FaVolumeHigh />
-      </button>
-      <button className="dy-button" onClick={toggleAudio}>
-        <FaCirclePlay />
-      </button>
-      <button className="dy-button" onClick={() => changeVolume("down")}>
-        <FaVolumeLow />
-      </button>
-
-      {/* Volume UI */}
-      <div className="volume-indicator">
-        <p>Volume: {Math.round(volume * 100)}%</p>
-        <div className="volume-bar">
-          <div className="volume-fill" style={{ width: `${volume * 100}%` }} />
-        </div>
+      <div className="function">
+        <audio ref={audioRef} src={src} preload="auto" />
+        <button className="dy-button" onClick={() => changeVolume("up")}>
+          <FaVolumeHigh color="#6b513c" />
+        </button>
+        <button className="dy-button" onClick={toggleAudio}>
+          <FaCirclePlay color="#6b513c" />
+        </button>
+        <button className="dy-button" onClick={() => changeVolume("down")}>
+          <FaVolumeLow color="#6b513c" />
+        </button>
       </div>
+      <Slider
+        className="ui"
+        orientation="vertical"
+        defaultValue={Math.round(volume * 100)}
+        value={Math.round(volume * 100)}
+        sx={{
+          color: '#6b513c', 
+        }}
+      />
     </div>
   );
 }

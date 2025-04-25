@@ -2,10 +2,10 @@
 import { useEffect, useState } from "react";
 import "./countdown-timer.scss";
 function CountdownTimer() {
-  const [days, setDays] = useState(0);
-  const [hours, setHours] = useState(0);
-  const [minutes, setMinutes] = useState(0);
-  const [seconds, setSeconds] = useState(0);
+  const [days, setDays] = useState<number>(0);
+  const [hours, setHours] = useState<number>(0);
+  const [minutes, setMinutes] = useState<number>(0);
+  const [seconds, setSeconds] = useState<number>(0);
   useEffect(() => {
     const target = new Date("07/13/2025 00:00:00");
     const interval = setInterval(() => {
@@ -30,8 +30,10 @@ function CountdownTimer() {
   });
   return (
     <div className="dy-countdown-timer">
-      <div>Count Down Timer</div>
-      <div>{`${days}:${hours}:${minutes}:${seconds}`}</div>
+      <div className="dy-countdown-timer__header">Công Danh & Ngô Yến</div>
+      <div>
+        {`${days.toString().padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`}
+      </div>
     </div>
   );
 }

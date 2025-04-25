@@ -1,0 +1,136 @@
+.dy-wedding-guest-book {
+  padding: 50px;
+
+  &__header {
+    font-family: var(--font-alex-brush);
+    color: #6b513c;
+    font-size: 70px;
+    font-weight: 700;
+    text-align: center;
+    padding: 50px;
+    padding-top: unset;
+  }
+
+  &__container {
+    font-size: 21px;
+    display: flex;
+    gap: 100px;
+    &__form {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 50px;
+
+      .form-control {
+        .name-text {
+          padding: 20px;
+          border-radius: 20px 30px;
+          border: 1px solid #6b513c;
+          width: 100%;
+          font-size: 21px;
+        }
+        .wishes-text {
+          font-size: 21px;
+          min-height: 300px;
+          border-radius: 30px;
+          padding: 20px 30px;
+          width: 100%;
+        }
+      }
+    }
+
+    &__wishes {
+      width: 50%;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      max-height: calc(100vh - 138px - 50px);
+      overflow-y: auto;
+      .wish {
+        padding: 30px;
+        border-radius: 30px;
+        background-color: #eab9bf;
+        .name {
+          font-weight: 700;
+          margin-bottom: 10px;
+        }
+      }
+    }
+    .button {
+      font-size: 21px;
+      min-width: 285px;
+      width: fit-content;
+      align-self: center;
+      border-radius: 30px;
+      padding: 10px 20px;
+      border: 1px solid #6b513c;
+      color: #6b513c;
+      cursor: pointer;
+
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 20px;
+      text-transform: uppercase;
+
+      span {
+      font-weight: 600;
+      }
+    }
+    .error-msg,
+    .thank-you-msg {
+      display: block;
+      margin-top: 10px;
+      color: #ca2a30;
+    }
+    .thank-you-msg {
+      margin-top: unset;
+      color: green;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    & {
+      padding: 30px;
+      font-size: 14px;
+    }
+    &__header {
+      font-size: 50px;
+      padding: 30px;
+      padding-top: unset;
+    }
+    &__container {
+      flex-direction: column;
+      gap: 50px;
+      &__form {
+        width: 100%;
+        .form-control {
+          
+          .wishes-text,
+          .name-text {
+            font-size: 14px;
+            padding: 15px 30px;
+            border-radius: 10px;
+          }
+        }
+      }
+      &__wishes {
+        width: 100%;
+        max-height: 491px;
+        .wish {
+          padding: 10px 20px;
+          font-size: 14px;
+          border-radius: 10px;
+          .name {
+            font-weight: 700;
+            margin-bottom: 10px;
+          }
+        }
+      }
+      .button {
+        font-size: 14px;
+        border-radius: 10px;
+      }
+    }
+  }
+}

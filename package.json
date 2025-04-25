@@ -13,6 +13,7 @@
     "@emotion/styled": "^11.14.0",
     "@mui/material": "^7.0.2",
     "dy-wedding-website": "file:",
+    "firebase": "^11.6.0",
     "imagesloaded": "^5.0.0",
     "lightgallery": "^2.8.3",
     "masonry-layout": "^4.2.2",
