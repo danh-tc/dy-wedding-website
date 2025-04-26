@@ -41,7 +41,6 @@ a {
   }
 }
 
-
 .dy-container {
   position: relative;
   display: flex;
@@ -54,7 +53,8 @@ a {
   height: 100vh;
   width: 100%;
   background-image: url("/background-img.png");
-  object-fit: contain;
+  background-repeat: no-repeat;
+  background-size: 100%;
 
   @media only screen and (max-width: 767px) {
     height: auto;
@@ -69,4 +69,15 @@ a {
 
   cursor: pointer;
   width: fit-content;
+}
+
+.header-1 {
+  font-family: var(--font-alex-brush);
+  color: #6b513c;
+  font-size: 70px;
+  font-weight: 700;
+
+  @media only screen and (max-width: 767px) {
+    font-size: 50px;
+  }
 }

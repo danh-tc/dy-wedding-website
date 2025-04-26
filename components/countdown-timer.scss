@@ -1,6 +1,100 @@
 .dy-countdown-timer {
-  text-align: center;
+  color: #6b513c;
   font-size: 50px;
+  padding: 50px;
   width: 100%;
-  background-color: antiquewhite;
+  height: 100vh;
+  background-image: url("/background-img-top-flower.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 200px;
+
+  @media only screen and (min-width: 1025px) {
+    &__header.tablet {
+      display: none;
+    }
+  }
+
+  &__container {
+    display: flex;
+    gap: 10%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+
+    .img-container {
+      width: 10%;
+      min-width: 100px;
+      height: auto;
+    }
+
+    .dynamic-timer {
+      display: flex;
+      gap: 20px;
+      .days,
+      .hours,
+      .minutes,
+      .seconds {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+
+        .text {
+          font-size: 21px;
+        }
+
+        .number {
+          font-size: 45px;
+          font-weight: 700;
+        }
+      }
+    }
+
+    .hard-timer {
+      .first-row {
+        font-size: 35px;
+        margin-bottom: 20px;
+      }
+      .last-row {
+        font-size: 45px;
+      }
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    & {
+      padding: 30px;
+    }
+  }
+
+  @media only screen and (max-width: 1024px) {
+    & {
+      height: 100%;
+      padding: 50px;
+      gap: 50px;
+
+      &__header.desktop {
+        display: none;
+      }
+
+      &__header {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+      }
+
+      &__container {
+        flex-direction: column;
+        gap: 50px;
+      }
+    }
+  }
 }

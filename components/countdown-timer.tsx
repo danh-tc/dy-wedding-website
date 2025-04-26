@@ -1,6 +1,8 @@
 "use client";
 import { useEffect, useState } from "react";
+import heart from "../public/heart.svg";
 import "./countdown-timer.scss";
+import Image from "next/image";
 function CountdownTimer() {
   const [days, setDays] = useState<number>(0);
   const [hours, setHours] = useState<number>(0);
@@ -30,9 +32,47 @@ function CountdownTimer() {
   });
   return (
     <div className="dy-countdown-timer">
-      <div className="dy-countdown-timer__header">Công Danh & Ngô Yến</div>
-      <div>
-        {`${days.toString().padStart(2, "0")}:${hours.toString().padStart(2, "0")}:${minutes.toString().padStart(2, "0")}:${seconds.toString().padStart(2, "0")}`}
+      <div className="dy-countdown-timer__header header-1 desktop">
+        Công Danh & Ngô Yến
+      </div>
+      <div className="dy-countdown-timer__header header-1 tablet">
+        <span>Công Danh</span>
+        <span>&</span>
+        <span>Ngô Yến</span>
+      </div>
+      <div className="dy-countdown-timer__container">
+        <div className="hard-timer">
+          <div className="first-row">09:00 Monday</div>
+          <div className="last-row">14.07.2025</div>
+        </div>
+        <div className="img-container">
+          <Image
+            src={heart}
+            alt="heart"
+            style={{
+              width: "100%",
+              height: "auto",
+            }}
+          ></Image>
+        </div>
+        <div className="dynamic-timer">
+          <div className="days">
+            <div className="number">{days.toString().padStart(2, "0")}</div>
+            <div className="text">Days</div>
+          </div>
+          <div className="hours">
+            <div className="number">{hours.toString().padStart(2, "0")}</div>
+            <div className="text">Hours</div>
+          </div>
+          <div className="minutes">
+            <div className="number">{minutes.toString().padStart(2, "0")}</div>
+            <div className="text">Minutes</div>
+          </div>
+          <div className="seconds">
+            <div className="number">{seconds.toString().padStart(2, "0")}</div>
+            <div className="text"> Seconds</div>
+          </div>
+        </div>
       </div>
     </div>
   );

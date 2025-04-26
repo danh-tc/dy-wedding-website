@@ -8,17 +8,17 @@ export default function Home() {
   return (
     <main className="dy-container">
       <div className="dy-container-full-vh">
-        <WeddingGuestBook />
+        <CountdownTimer />
       </div>
       <div className="dy-container-full-vh">
-        <CountdownTimer />
+        <WeddingGuestBook />
       </div>
       <ImageGallery />
       <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
       <div
         style={{ backgroundColor: "green", height: "1000px", width: "500px" }}
       ></div>
-      <YoutubeEmbed videoId="M7lc1UVf-VE" />
+      {/* <YoutubeEmbed videoId="M7lc1UVf-VE" /> */}
       <div
         style={{ backgroundColor: "green", height: "1000px", width: "500px" }}
       ></div>
