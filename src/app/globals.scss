@@ -54,7 +54,7 @@ a {
   width: 100%;
   background-image: url("/background-img.png");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: cover;
 
   @media only screen and (max-width: 767px) {
     height: auto;
