@@ -147,14 +147,18 @@ export default function WeddingGuestBook() {
           {!submitted ? (
             <button className="button" type="submit" disabled={submitting}>
               {submitting ? (
-                "LỜI CHÚC CỦA BẠN ĐANG ĐƯỢC GỬI ĐI..."
+                <span>LỜI CHÚC CỦA BẠN ĐANG ĐƯỢC GỬI ĐI...</span>
               ) : (
                 <>
                   <span>GỬI LỜI CHÚC</span> <FaArrowRight />
                 </>
               )}
             </button>
-          ): (<div className="thank-you-msg">Cảm ơn lời chúc từ bạn, hẹn gặp lại tại đám cưới của tụi mình nhé.</div>)}
+          ) : (
+            <div className="thank-you-msg">
+              Cảm ơn lời chúc từ bạn, hẹn gặp lại tại đám cưới của tụi mình nhé.
+            </div>
+          )}
         </form>
         <div className="dy-wedding-guest-book__container__wishes">
           {wishes.length > 0 &&
