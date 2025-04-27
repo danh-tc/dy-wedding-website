@@ -3,6 +3,7 @@ import AudioPlayer from "../../components/audio-player";
 import CountdownTimer from "../../components/countdown-timer";
 import WeddingInfo from "../../components/wedding-info";
 import WeddingGuestBook from "../../components/wedding-guest-book";
+import music from "../../public/audio/Cant-Help-Falling-In-Love.mp3";
 
 export default function Home() {
   return (
@@ -29,7 +30,7 @@ export default function Home() {
           address="Tại tư gia, 98 ấp Thạnh Lập, Thạnh Phú, Thạnh Hóa, Long An"
         />
       </div>
-      <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
+      <AudioPlayer src={music} />
     </main>
   );
 }
