@@ -1,15 +1,11 @@
 import type { NextConfig } from "next";
 
+const isProd = process.env.NODE_ENV === "production";
+
 const nextConfig: NextConfig = {
-  webpack(config) {
-    config.module.rules.push({
-      test: /\.mp3$/,
-      use: {
-        loader: "file-loader",
-      },
-    });
-    return config;
-  },
+  output: "export",
+  basePath: isProd ? "/dy-wedding-website" : "",
+  assetPrefix: isProd ? "/dy-wedding-website/" : "",
 };
 
 export default nextConfig;
