@@ -16,7 +16,7 @@ export default function Home() {
       <div className="dy-container-full-vh">
         <WeddingInfo
           isFromGroom={false}
-          mapHref="https://maps.app.goo.gl/U8tS8myZ2EPpVwMq5"
+          mapHref="https://maps.app.goo.gl/1cjvvBUJCaz5TXjV6"
           header="Tiệc cưới nhà gái"
           address="Tại tư gia, ấp 2, Thủy Tây, Thạnh Hóa, Long An"
         />
