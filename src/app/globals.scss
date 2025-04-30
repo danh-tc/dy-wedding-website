@@ -57,7 +57,8 @@ a {
   background-size: cover;
 
   @media only screen and (max-width: 767px) {
-    height: auto;
+    height: 100vh;
+    min-height: 932px;
   }
 }
 
