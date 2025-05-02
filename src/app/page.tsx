@@ -3,10 +3,37 @@ import AudioPlayer from "../../components/audio-player";
 import CountdownTimer from "../../components/countdown-timer";
 import WeddingInfo from "../../components/wedding-info";
 import WeddingGuestBook from "../../components/wedding-guest-book";
+import GroomBrideInfo from "../../components/groom-bride-info";
 
 export default function Home() {
   return (
     <main className="dy-container">
+      <div className="dy-container-full-vh">
+        <GroomBrideInfo
+          isGroom={true}
+          imgUrl="/dog-in-a-suit.jpg"
+          header="Công Danh"
+          description="Viết một đoạn trích hoặc đoạn giới thiệu của bài viết
+              chính của bạn ở đây. Bạn có thể chọn chỉ thêm đoạn
+              đầu tiên một cách trực tiếp hoặc viết một bản tóm tắt
+              hoặc đoạn giới thiệu cho bài viết.
+              Dù bạn chọn gì, thì cũng đừng tiết lộ hết mọi thông tin!
+              Sau cuối, bạn muốn họ sẽ đọc toàn bộ bài viết."
+        />
+      </div>
+      <div className="dy-container-full-vh">
+        <GroomBrideInfo
+          isGroom={false}
+          imgUrl="/dog-in-a-suit.jpg"
+          header="Ngô Yến"
+          description="Viết một đoạn trích hoặc đoạn giới thiệu của bài viết
+              chính của bạn ở đây. Bạn có thể chọn chỉ thêm đoạn
+              đầu tiên một cách trực tiếp hoặc viết một bản tóm tắt
+              hoặc đoạn giới thiệu cho bài viết.
+              Dù bạn chọn gì, thì cũng đừng tiết lộ hết mọi thông tin!
+              Sau cuối, bạn muốn họ sẽ đọc toàn bộ bài viết."
+        />
+      </div>
       <div className="dy-container-full-vh">
         <CountdownTimer />
       </div>

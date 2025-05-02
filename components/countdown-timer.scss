@@ -28,6 +28,9 @@
     align-items: center;
 
     .img-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
       width: 10%;
       min-width: 100px;
       height: auto;
@@ -44,6 +47,7 @@
         flex-direction: column;
         gap: 20px;
         align-items: center;
+        min-width: 60px;
 
         .text {
           font-size: 21px;
@@ -67,17 +71,12 @@
     }
   }
 
-  @media only screen and (max-width: 767px) {
-    & {
-      padding: 30px;
-    }
-  }
-
   @media only screen and (max-width: 1024px) {
     & {
       height: 100vh;
       padding: 50px;
       gap: 50px;
+      min-height: 932px;
 
       &__header.desktop {
         display: none;
@@ -94,6 +93,12 @@
       &__container {
         flex-direction: column;
         gap: 50px;
+      }
+    }
+
+    @media only screen and (max-width: 767px) {
+      & {
+        padding: 30px;
       }
     }
   }

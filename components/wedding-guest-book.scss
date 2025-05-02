@@ -1,4 +1,7 @@
 .dy-wedding-guest-book {
+  background-image: url("/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
   padding: 50px;
 
   &__header {
@@ -97,7 +100,8 @@
   @media only screen and (max-width: 767px) {
     & {
       padding: 30px;
-      font-size: 14px;
+      font-size: 16px;
+      min-height: 932px;
     }
     &__header {
       font-size: 50px;
@@ -107,7 +111,7 @@
     &__container {
       .error-msg,
       .thank-you-msg {
-        font-size: 14px;
+        font-size: 16px;
       }
       flex-direction: column;
       gap: 50px;
@@ -116,7 +120,7 @@
         .form-control {
           .wishes-text,
           .name-text {
-            font-size: 14px;
+            font-size: 16px;
             padding: 15px 30px;
             border-radius: 10px;
           }
@@ -127,7 +131,7 @@
         max-height: 491px;
         .wish {
           padding: 10px 20px;
-          font-size: 14px;
+          font-size: 16px;
           border-radius: 10px;
           .name {
             font-weight: 700;
@@ -136,7 +140,7 @@
         }
       }
       .button {
-        font-size: 14px;
+        font-size: 16px;
         border-radius: 10px;
         min-width: unset;
       }
