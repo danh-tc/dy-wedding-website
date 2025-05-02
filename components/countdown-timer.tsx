@@ -42,7 +42,7 @@ function CountdownTimer() {
       </div>
       <div className="dy-countdown-timer__container">
         <div className="hard-timer">
-          <div className="first-row">09:00 Monday</div>
+          <div className="first-row">09:00 Thứ hai</div>
           <div className="last-row">14.07.2025</div>
         </div>
         <div className="img-container">
@@ -58,19 +58,19 @@ function CountdownTimer() {
         <div className="dynamic-timer">
           <div className="days">
             <div className="number">{days.toString().padStart(2, "0")}</div>
-            <div className="text">Days</div>
+            <div className="text">Ngày</div>
           </div>
           <div className="hours">
             <div className="number">{hours.toString().padStart(2, "0")}</div>
-            <div className="text">Hours</div>
+            <div className="text">giờ</div>
           </div>
           <div className="minutes">
             <div className="number">{minutes.toString().padStart(2, "0")}</div>
-            <div className="text">Minutes</div>
+            <div className="text">phút</div>
           </div>
           <div className="seconds">
             <div className="number">{seconds.toString().padStart(2, "0")}</div>
-            <div className="text"> Seconds</div>
+            <div className="text"> giây</div>
           </div>
         </div>
       </div>
