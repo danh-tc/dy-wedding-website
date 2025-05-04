@@ -63,10 +63,6 @@ export default function YouTubeEmbed({
     };
   }, [videoId]);
 
-  const handlePlay = () => {
-    playerRef.current?.playVideo();
-  };
-
   const handlePause = () => {
     playerRef.current?.pauseVideo();
   };
