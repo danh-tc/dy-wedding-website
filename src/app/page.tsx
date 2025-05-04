@@ -5,12 +5,19 @@ import WeddingInfo from "../../components/wedding-info";
 import WeddingGuestBook from "../../components/wedding-guest-book";
 import GroomBrideInfo from "../../components/groom-bride-info";
 import YouTubeEmbed from "../../components/youtube-embed";
+import ImageGallery from "../../components/image-gallery";
+
+const imgUrl =
+  "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
 
 export default function Home() {
   return (
     <main className="dy-container">
       <div className="dy-container-full-vh">
-        <YouTubeEmbed videoId="AXqKSbHvnxM"/>
+        Xin Chao
+      </div>
+      <div className="dy-container-full-vh">
+        <CountdownTimer />
       </div>
       <div className="dy-container-full-vh">
         <GroomBrideInfo
@@ -39,10 +46,16 @@ export default function Home() {
         />
       </div>
       <div className="dy-container-full-vh">
-        <CountdownTimer />
+        <ImageGallery
+          isFirstPage={true}
+          mainImages={[imgUrl, imgUrl, imgUrl, imgUrl]}
+        />
       </div>
       <div className="dy-container-full-vh">
-        <WeddingGuestBook />
+        <ImageGallery
+          isFirstPage={false}
+          mainImages={[imgUrl, imgUrl, imgUrl, imgUrl]}
+        />
       </div>
       <div className="dy-container-full-vh">
         <WeddingInfo
@@ -59,6 +72,15 @@ export default function Home() {
           header="Tiệc cưới nhà trai"
           address="Tại tư gia, 98 ấp Thạnh Lập, Thạnh Phú, Thạnh Hóa, Long An"
         />
+      </div>
+      <div className="dy-container-full-vh">
+        <YouTubeEmbed videoId="zJgVUvpaktw" />
+      </div>
+      <div className="dy-container-full-vh">
+        <WeddingGuestBook />
+      </div>
+      <div className="dy-container-full-vh">
+        Cam on
       </div>
       <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
     </main>

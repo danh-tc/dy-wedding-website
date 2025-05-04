@@ -145,7 +145,7 @@ export default function WeddingGuestBook() {
             )}
           </div>
           {!submitted ? (
-            <button className="button" type="submit" disabled={submitting}>
+            <button className="dy-button" type="submit" disabled={submitting}>
               {submitting ? (
                 <span>LỜI CHÚC CỦA BẠN ĐANG ĐƯỢC GỬI ĐI...</span>
               ) : (

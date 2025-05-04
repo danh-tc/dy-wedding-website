@@ -28,7 +28,7 @@ export default function YouTubeEmbed({
     const firstScriptTag = document.getElementsByTagName("script")[0];
     firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag);
     const height = window.innerHeight * 0.8;
-    const width = window.innerWidth * 0.40;
+    const width = window.innerWidth * 0.4;
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player("yt-player", {
         height,
@@ -41,9 +41,7 @@ export default function YouTubeEmbed({
       (entries) => {
         entries.forEach((entry) => {
           if (playerRef.current) {
-            if (entry.isIntersecting) {
-              handlePlay();
-            } else {
+            if (!entry.isIntersecting) {
               handlePause();
             }
           }
