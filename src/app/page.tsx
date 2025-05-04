@@ -4,10 +4,14 @@ import CountdownTimer from "../../components/countdown-timer";
 import WeddingInfo from "../../components/wedding-info";
 import WeddingGuestBook from "../../components/wedding-guest-book";
 import GroomBrideInfo from "../../components/groom-bride-info";
+import YouTubeEmbed from "../../components/youtube-embed";
 
 export default function Home() {
   return (
     <main className="dy-container">
+      <div className="dy-container-full-vh">
+        <YouTubeEmbed videoId="AXqKSbHvnxM"/>
+      </div>
       <div className="dy-container-full-vh">
         <GroomBrideInfo
           isGroom={true}
