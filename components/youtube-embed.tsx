@@ -3,6 +3,7 @@
 "use client";
 
 import { useEffect, useRef } from "react";
+import "./youtube-embed.scss";
 
 declare global {
   interface Window {
@@ -13,15 +14,11 @@ declare global {
 
 interface YouTubePlayerProps {
   videoId: string;
-  height?: string;
-  width?: string;
 }
 
 export default function YouTubeEmbed({
   videoId,
-  height = "360",
-  width = "640",
-}: YouTubePlayerProps) {
+}: Readonly<YouTubePlayerProps>) {
   const playerRef = useRef<any>(null);
   const containerRef = useRef<HTMLDivElement | null>(null);
 
@@ -30,17 +27,13 @@ export default function YouTubeEmbed({
     tag.src = "https://www.youtube.com/iframe_api";
     const firstScriptTag = document.getElementsByTagName("script")[0];
     firstScriptTag?.parentNode?.insertBefore(tag, firstScriptTag);
-
+    const height = window.innerHeight * 0.8;
+    const width = window.innerWidth * 0.40;
     window.onYouTubeIframeAPIReady = () => {
       playerRef.current = new window.YT.Player("yt-player", {
         height,
         width,
         videoId,
-        events: {
-          onReady: () => {
-            // playerRef.current?.mute();
-          },
-        },
       });
     };
 
@@ -70,7 +63,7 @@ export default function YouTubeEmbed({
         observer.unobserve(videoContainerEl);
       }
     };
-  }, [videoId, height, width]);
+  }, [videoId]);
 
   const handlePlay = () => {
     playerRef.current?.playVideo();
@@ -81,15 +74,16 @@ export default function YouTubeEmbed({
   };
 
   return (
-    <div ref={containerRef}>
-      <div id="yt-player"></div>
-      <div>
-        <button className="play" onClick={handlePlay}>
-          Play
-        </button>
-        <button onClick={handlePause}>Pause</button>
-        <button id="myButton">Click Me</button>
+    <div className="dy-video" ref={containerRef}>
+      <div className="dy-video__text">
+        Sẽ hơi quá khi nói rằng chúng tôi đã trải qua khá nhiều khó khăn trên
+        hành trình yêu của mình. Nhưng, mọi thử thách mà chúng tôi đã nếm trải
+        trong 5 năm qua chỉ làm cho mối quan hệ của chúng tôi thêm bền chặt.
+        Chúng tôi tin tưởng vào việc nhìn thấy những điều tốt đẹp nhất ở mọi thứ
+        và tiến về phía trước. Giờ đây, chúng tôi đã sẵn sàng gác lại mọi khó
+        khăn và bắt đầu lại mọi thứ.
       </div>
+      <div id="yt-player"></div>
     </div>
   );
 }

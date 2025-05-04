@@ -24,9 +24,9 @@ export default function GroomBrideInfo({
       <div className="dy-groom-bride-info__text-container">
         <div className="header header-1">
           {isGroom ? (
-            <span>Về chú rể&nbsp;-&nbsp;</span>
+            <span>Về chú rể &nbsp;</span>
           ) : (
-            <span>Về cô dâu&nbsp;-&nbsp;</span>
+            <span>Về cô dâu &nbsp;</span>
           )}
           <span>{header}</span>
         </div>
