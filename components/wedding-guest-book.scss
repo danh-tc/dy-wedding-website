@@ -62,28 +62,7 @@
         }
       }
     }
-    .button {
-      font-size: 21px;
-      min-width: 300px;
-      width: fit-content;
-      align-self: center;
-      border-radius: 30px;
-      padding: 10px 20px;
-      border: 1px solid #6b513c;
-      color: #6b513c;
-      cursor: pointer;
-      background-color: #fff;
 
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      gap: 20px;
-      text-transform: uppercase;
-
-      span {
-        font-weight: 600;
-      }
-    }
     .error-msg,
     .thank-you-msg {
       display: block;
@@ -138,11 +117,6 @@
             margin-bottom: 10px;
           }
         }
-      }
-      .button {
-        font-size: 16px;
-        border-radius: 10px;
-        min-width: unset;
       }
     }
   }

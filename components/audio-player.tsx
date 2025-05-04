@@ -1,5 +1,5 @@
 "use client";
-import { useRef, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { FaCirclePlay, FaCirclePause } from "react-icons/fa6";
 
 import "./audio-player.scss";
@@ -30,6 +30,12 @@ export default function AudioPlayer({ src }: Readonly<AudioPlayerProps>) {
     if (!toolTip) return;
     toolTip.style.display = "none";
   };
+
+  useEffect(() => {
+    setTimeout(() => {
+      hideToolTip();
+    }, 15000);
+  }, []);
 
   return (
     <div className="dy-audio-player">

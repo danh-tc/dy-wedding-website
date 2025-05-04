@@ -18,8 +18,10 @@
       border-color: #6b513c;
       height: 40px;
       width: 40px;
+      min-width: unset;
       padding: unset;
       position: relative;
+
       svg {
         height: 20px;
         width: 20px;
@@ -32,7 +34,6 @@
     display: flex;
     padding: 10px 20px;
     border-radius: 5px;
-    gap: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     font-size: 14px;
     color: #6b513c;
@@ -48,6 +49,7 @@
       border: unset;
       height: fit-content;
       cursor: pointer;
+      padding: 10px;
     }
 
     &:before {
