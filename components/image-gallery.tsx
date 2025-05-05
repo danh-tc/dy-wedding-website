@@ -4,6 +4,7 @@ import { useRef } from "react";
 import ImageGallery from "react-image-gallery";
 import "react-image-gallery/styles/css/image-gallery.css";
 import "./image-gallery.scss";
+
 import Image from "next/image";
 interface ImageGalleryProps {
   isFirstPage: boolean;
@@ -41,11 +42,9 @@ export default function DyImageGallery({
 
   return (
     <div className="dy-image-gallery">
-      {isFirstPage && (
-        <div className="dy-image-gallery__header header-1">
-          Album hình cưới của tụi mình
-        </div>
-      )}
+      <div className="dy-image-gallery__header header-1">
+        Album hình cưới của tụi mình
+      </div>
       <div className="dy-image-gallery__images">
         <div className="col-1">
           <Image src={mainImages[0]} alt="groom-brige-img" fill />
