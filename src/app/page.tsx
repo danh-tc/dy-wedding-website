@@ -6,6 +6,8 @@ import WeddingGuestBook from "../../components/wedding-guest-book";
 import GroomBrideInfo from "../../components/groom-bride-info";
 import YouTubeEmbed from "../../components/youtube-embed";
 import ImageGallery from "../../components/image-gallery";
+import ContentBlock from "../../components/content-block";
+import Cover from "../../components/cover";
 
 const imgUrl =
   "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -13,9 +15,7 @@ const imgUrl =
 export default function Home() {
   return (
     <main className="dy-container">
-      <div className="dy-container-full-vh">
-        Xin Chao
-      </div>
+      <Cover backgroundUrl="/welcome-bg.png" />
       <div className="dy-container-full-vh">
         <CountdownTimer />
       </div>
@@ -47,12 +47,6 @@ export default function Home() {
       </div>
       <div className="dy-container-full-vh">
         <ImageGallery
-          isFirstPage={true}
-          mainImages={[imgUrl, imgUrl, imgUrl, imgUrl]}
-        />
-      </div>
-      <div className="dy-container-full-vh">
-        <ImageGallery
           isFirstPage={false}
           mainImages={[imgUrl, imgUrl, imgUrl, imgUrl]}
         />
@@ -73,15 +67,31 @@ export default function Home() {
           address="Tại tư gia, 98 ấp Thạnh Lập, Thạnh Phú, Thạnh Hóa, Long An"
         />
       </div>
+      <ContentBlock
+        content="Sẽ hơi quá khi nói rằng chúng tôi
+            đã trải qua khá nhiều khó khăn
+            trên hành trình yêu của mình.
+            Nhưng, mọi thử thách mà chúng tôi
+            đã nếm trải trong 5 năm qua chỉ
+            làm cho mối quan hệ của chúng tôi
+            thêm bền chặt.
+
+            Chúng tôi tin tưởng vào việc
+            nhìn thấy những điều tốt đẹp nhất
+            ở mọi thứ và tiến về phía trước.
+            Giờ đây, chúng tôi đã sẵn sàng
+            gác lại mọi khó khăn và bắt đầu lại
+            mọi thứ."
+        mainImgUrl={imgUrl}
+        subImgUrl="/rings.svg"
+      />
       <div className="dy-container-full-vh">
         <YouTubeEmbed videoId="zJgVUvpaktw" />
       </div>
       <div className="dy-container-full-vh">
         <WeddingGuestBook />
       </div>
-      <div className="dy-container-full-vh">
-        Cam on
-      </div>
+      <Cover backgroundUrl="/welcome-bg.png" />
       <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
     </main>
   );
