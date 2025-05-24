@@ -15,14 +15,14 @@ const imgUrl =
 export default function Home() {
   return (
     <main className="dy-container">
-      <Cover backgroundUrl="/welcome-bg.png" />
+      <Cover backgroundUrl="/welcome-bg.png" backgroundMobileUrl="/firstpage-mobile.webp" />
       <div className="dy-container-full-vh">
         <CountdownTimer />
       </div>
       <div className="dy-container-full-vh">
         <GroomBrideInfo
           isGroom={true}
-          imgUrl="/dog-in-a-suit.jpg"
+          imgUrl="/TED_5689.webp"
           header="Công Danh"
           description="Viết một đoạn trích hoặc đoạn giới thiệu của bài viết
               chính của bạn ở đây. Bạn có thể chọn chỉ thêm đoạn
@@ -35,7 +35,7 @@ export default function Home() {
       <div className="dy-container-full-vh">
         <GroomBrideInfo
           isGroom={false}
-          imgUrl="/dog-in-a-suit.jpg"
+          imgUrl="/TED_5490.webp"
           header="Ngô Yến"
           description="Viết một đoạn trích hoặc đoạn giới thiệu của bài viết
               chính của bạn ở đây. Bạn có thể chọn chỉ thêm đoạn
@@ -48,14 +48,14 @@ export default function Home() {
       <div className="dy-container-full-vh">
         <ImageGallery
           isFirstPage={false}
-          mainImages={[imgUrl, imgUrl, imgUrl, imgUrl]}
+          mainImages={['/TED_5841.webp', '/TED_5349.webp', '/TED_5562.webp', '/TED_5923.webp']}
         />
       </div>
       <div className="dy-container-full-vh">
         <WeddingInfo
           isFromGroom={false}
           mapHref="https://maps.app.goo.gl/1cjvvBUJCaz5TXjV6"
-          header="Tiệc cưới nhà gái"
+          header="Lễ Vu Quy"
           address="Tại tư gia, ấp 2, Thủy Tây, Thạnh Hóa, Long An"
         />
       </div>
@@ -63,7 +63,7 @@ export default function Home() {
         <WeddingInfo
           isFromGroom={true}
           mapHref="https://maps.app.goo.gl/U8tS8myZ2EPpVwMq5"
-          header="Tiệc cưới nhà trai"
+          header="Lễ Thành Hôn"
           address="Tại tư gia, 98 ấp Thạnh Lập, Thạnh Phú, Thạnh Hóa, Long An"
         />
       </div>
@@ -91,7 +91,7 @@ export default function Home() {
       <div className="dy-container-full-vh">
         <WeddingGuestBook />
       </div>
-      <Cover backgroundUrl="/welcome-bg.png" />
+      <Cover backgroundUrl="/welcome-bg.png" backgroundMobileUrl="/firstpage-mobile.webp" />
       <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
     </main>
   );

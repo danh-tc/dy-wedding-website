@@ -22,21 +22,62 @@ export default function DyImageGallery({
     }
   };
 
-  const imgUrl =
-    "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
-
   const images = [
     {
-      original: imgUrl,
-      thumbnail: imgUrl,
+      original: '/TED_5841.webp',
+      thumbnail: '/TED_5841.webp',
     },
     {
-      original: imgUrl,
-      thumbnail: imgUrl,
+      original: '/TED_5562.webp',
+      thumbnail: '/TED_5562.webp',
+    },{
+      original: '/TED_5923.webp',
+      thumbnail: '/TED_5923.webp',
     },
     {
-      original: imgUrl,
-      thumbnail: imgUrl,
+      original: '/TED_5883.webp',
+      thumbnail: '/TED_5883.webp',
+    },
+    {
+      original: '/TED_5689.webp',
+      thumbnail: '/TED_5689.webp',
+    },{
+      original: '/TED_5615.webp',
+      thumbnail: '/TED_5615.webp',
+    },
+    {
+      original: '/TED_5610.webp',
+      thumbnail: '/TED_5610.webp',
+    },
+    {
+      original: '/TED_5544.webp',
+      thumbnail: '/TED_5544.webp',
+    },{
+      original: '/TED_5490.webp',
+      thumbnail: '/TED_5490.webp',
+    },
+    {
+      original: '/TED_5250.webp',
+      thumbnail: '/TED_5250.webp',
+    },
+    {
+      original: '/TED_4984.webp',
+      thumbnail: '/TED_4984.webp',
+    },
+    {
+      original: '/TED_4860.webp',
+      thumbnail: '/TED_4860.webp',
+    },
+    {
+      original: '/TED_4816.webp',
+      thumbnail: '/TED_4816.webp',
+    },
+    {
+      original: '/TED_5349.webp',
+      thumbnail: '/TED_5349.webp',
+    },{
+      original: '/TED_5300.webp',
+      thumbnail: '/TED_5300.webp',
     },
   ];
 

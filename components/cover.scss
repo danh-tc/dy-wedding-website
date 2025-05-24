@@ -1,6 +1,24 @@
 .dy-cover {
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: center;
   height: 100vh;
   width: 100%;
+
+  &--desktop {
+    @media only screen and (max-width: 767px) {
+      display: none;
+    }
+  }
+
+  &--mobile {
+    display: none;
+
+    @media only screen and (max-width: 767px) {
+      &{
+        display: block;
+      }
+    }
+  }
 }
+
