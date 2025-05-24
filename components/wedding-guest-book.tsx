@@ -55,7 +55,9 @@ export default function WeddingGuestBook() {
   const wishesCollectionRef = collection(db, "wishes");
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    const { name, wishes } = formData;
+    let { name, wishes } = formData;
+    name = name.trim() || "";
+    wishes = wishes.trim() || "";
     if (!name) {
       setFormData((prevFormData) => ({
         ...prevFormData,

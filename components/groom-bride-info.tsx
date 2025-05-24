@@ -16,7 +16,7 @@ export default function GroomBrideInfo({
 }: Readonly<GroomBrideInfo>) {
   return (
     <div className="dy-groom-bride-info">
-      {!isGroom && (
+      {isGroom && (
         <div className="dy-groom-bride-info__img-container">
           <Image src={imgUrl} alt="groom-brige-img" fill />
         </div>
@@ -32,9 +32,9 @@ export default function GroomBrideInfo({
         </div>
         <div className="description">{description}</div>
       </div>
-      {isGroom && (
+      {!isGroom && (
         <div className="dy-groom-bride-info__img-container">
-          <Image src={imgUrl} alt="groom-brige-img" fill />
+          <Image src={imgUrl} alt="groom-brige-img" fill style={{objectPosition:"50% 20%"}}/>
         </div>
       )}
     </div>
