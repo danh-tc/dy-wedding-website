@@ -1,0 +1,40 @@
+.dy-open-letter {
+  background-image: url("/open-letter-bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  color: #6b513c;
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .content {
+    font-size: 32px;
+    padding-left: 200px;
+    padding-right: 200px;
+    margin-top: 100px;
+    padding-bottom: 15%;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    .content {
+      padding-left: 5%;
+      padding-right: 3%;
+    }
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding: 30px;
+    height: 80vh;
+    & {
+      .content {
+        margin-top: 50px;
+        padding: unset;
+        padding-bottom: 30%;
+        font-size: 16px;
+      }
+    }
+  }
+}
