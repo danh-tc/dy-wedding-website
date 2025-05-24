@@ -8,6 +8,7 @@ import YouTubeEmbed from "../../components/youtube-embed";
 import ImageGallery from "../../components/image-gallery";
 import ContentBlock from "../../components/content-block";
 import Cover from "../../components/cover";
+import OpenLetter from "../../components/open-letter";
 
 const imgUrl =
   "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -15,7 +16,13 @@ const imgUrl =
 export default function Home() {
   return (
     <main className="dy-container">
-      <Cover backgroundUrl="/welcome-bg.png" backgroundMobileUrl="/firstpage-mobile.webp" />
+      <Cover
+        backgroundUrl="/welcome-bg.png"
+        backgroundMobileUrl="/firstpage-mobile.webp"
+      />
+      <div className="dy-container-full-vh">
+        <OpenLetter/>
+      </div>
       <div className="dy-container-full-vh">
         <CountdownTimer />
       </div>
@@ -48,7 +55,12 @@ export default function Home() {
       <div className="dy-container-full-vh">
         <ImageGallery
           isFirstPage={false}
-          mainImages={['/TED_5841.webp', '/TED_5349.webp', '/TED_5562.webp', '/TED_5923.webp']}
+          mainImages={[
+            "/TED_5841.webp",
+            "/TED_5349.webp",
+            "/TED_5562.webp",
+            "/TED_5923.webp",
+          ]}
         />
       </div>
       <div className="dy-container-full-vh">
@@ -91,7 +103,10 @@ export default function Home() {
       <div className="dy-container-full-vh">
         <WeddingGuestBook />
       </div>
-      <Cover backgroundUrl="/welcome-bg.png" backgroundMobileUrl="/firstpage-mobile.webp" />
+      <Cover
+        backgroundUrl="/welcome-bg.png"
+        backgroundMobileUrl="/firstpage-mobile.webp"
+      />
       <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
     </main>
   );
