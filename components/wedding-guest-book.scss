@@ -78,22 +78,16 @@
     }
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     & {
       padding: 30px;
-      font-size: 16px;
       min-height: 932px;
     }
     &__header {
-      font-size: 50px;
       padding: 30px;
       padding-top: unset;
     }
     &__container {
-      .error-msg,
-      .thank-you-msg {
-        font-size: 16px;
-      }
       flex-direction: column;
       gap: 50px;
       &__form {
@@ -101,7 +95,6 @@
         .form-control {
           .wishes-text,
           .name-text {
-            font-size: 16px;
             padding: 15px 30px;
             border-radius: 10px;
           }
@@ -109,15 +102,42 @@
       }
       &__wishes {
         width: 100%;
-        max-height: 491px;
+        max-height: unset;
         .wish {
           padding: 10px 20px;
-          font-size: 16px;
           border-radius: 10px;
           .name {
             font-weight: 700;
             margin-bottom: 10px;
           }
+        }
+      }
+    }
+  }
+  @media only screen and (max-width: 767px) {
+    & {
+      font-size: 16px;
+    }
+    &__header {
+      font-size: 50px;
+    }
+    &__container {
+      .error-msg,
+      .thank-you-msg {
+        font-size: 16px;
+      }
+      &__form {
+        .form-control {
+          .wishes-text,
+          .name-text {
+            font-size: 16px;
+          }
+        }
+      }
+      &__wishes {
+        max-height: 491px;
+        .wish {
+          font-size: 16px;
         }
       }
     }

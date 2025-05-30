@@ -24,7 +24,17 @@ export default function WeddingInfo({
       <div className="dy-wedding-info__header header-1"> {header}</div>
       <div className="dy-wedding-info__container">
         <div className="date-time">
-          {isFromGroom ? "09:00 ngày 14.07.2025" : "09:00 ngày 13.07.2025"}
+          {isFromGroom ? (
+            <div>
+              <span>09:00 ngày 14.07.2025</span>
+              <span style={{fontWeight: 400}}>(Nhằm ngày 20.6.2025 âm lịch)</span>
+            </div>
+          ) : (
+            <div>
+              <span>09:00 ngày 13.07.2025</span>
+              <span style={{fontWeight: 400}}>(Nhằm ngày 19.6.2025 âm lịch)</span>
+            </div>
+          )}
         </div>
         <div className="address"> {address}</div>
         <a className="map-cta" href={mapHref} target="_blank">

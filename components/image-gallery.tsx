@@ -107,7 +107,7 @@ export default function DyImageGallery({
           <span>Xem tất cả ảnh</span>
         </button>
       )}
-      <ImageGallery ref={galleryRef} items={images} showBullets={true} showIndex={true}/>
+      <ImageGallery ref={galleryRef} items={images} showBullets={true} />
     </div>
   );
 }
