@@ -22,6 +22,16 @@
     flex-direction: column;
   }
 
+  .image-gallery-index {
+    right: unset;
+    left: 0;
+  }
+
+  .image-gallery-fullscreen-button {
+    bottom: unset;
+    top: 40px;
+  }
+
   &__header {
     text-align: center;
   }
@@ -76,7 +86,7 @@
 
       &__images {
         flex-direction: column;
-        
+
         .col-1,
         .col-2,
         .col-3 {
@@ -85,6 +95,12 @@
         .col-2 {
           height: calc(100vh - 160px - 88px - 44px);
         }
+      }
+
+      .image-gallery-fullscreen-button {
+        bottom: unset;
+        top: 0;
+        background: #0006;
       }
     }
   }
@@ -97,7 +113,7 @@
 }
 .image-gallery-thumbnail {
   height: auto;
-  
+
   .image-gallery-thumbnail-inner {
     height: 100%;
     img {

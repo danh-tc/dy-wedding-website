@@ -21,7 +21,7 @@ export default function Home() {
         backgroundMobileUrl="/firstpage-mobile.webp"
       />
       <div className="dy-container-full-vh">
-        <OpenLetter/>
+        <OpenLetter />
       </div>
       <div className="dy-container-full-vh">
         <CountdownTimer />
@@ -31,12 +31,11 @@ export default function Home() {
           isGroom={true}
           imgUrl="/TED_5689.webp"
           header="Công Danh"
-          description="Viết một đoạn trích hoặc đoạn giới thiệu của bài viết
-              chính của bạn ở đây. Bạn có thể chọn chỉ thêm đoạn
-              đầu tiên một cách trực tiếp hoặc viết một bản tóm tắt
-              hoặc đoạn giới thiệu cho bài viết.
-              Dù bạn chọn gì, thì cũng đừng tiết lộ hết mọi thông tin!
-              Sau cuối, bạn muốn họ sẽ đọc toàn bộ bài viết."
+          description="Thật khó để tự mô tả về chính bản thân mình.
+Thay vì viết lại thông tin cá nhân, mình chọn ghi lại những suy nghĩ của mình tại đây.
+Mình đến với cuộc đời này, hạnh phúc vì được sống bên cạnh những người mình yêu thương.
+Mỗi ngày trôi qua là một mảnh ghép trong ký ức – đôi khi hiện rõ, đôi khi mờ nhạt – nhưng những ký ức ấy chắc chắn sẽ theo mình suốt những năm tháng cuộc đời.
+Cảm ơn bạn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
         />
       </div>
       <div className="dy-container-full-vh">
@@ -44,12 +43,7 @@ export default function Home() {
           isGroom={false}
           imgUrl="/TED_5490.webp"
           header="Ngô Yến"
-          description="Viết một đoạn trích hoặc đoạn giới thiệu của bài viết
-              chính của bạn ở đây. Bạn có thể chọn chỉ thêm đoạn
-              đầu tiên một cách trực tiếp hoặc viết một bản tóm tắt
-              hoặc đoạn giới thiệu cho bài viết.
-              Dù bạn chọn gì, thì cũng đừng tiết lộ hết mọi thông tin!
-              Sau cuối, bạn muốn họ sẽ đọc toàn bộ bài viết."
+          description="Ngô Yến là cô gái sinh năm 1999, tuy sinh ra và lớn lên ở Long An nhưng lại mang trong mình nét duyên của người Hải Dương. Yến là một cô nàng Marketing năng động, thích đọc sách, lang thang đó đây và chìm đắm trong những giai điệu âm nhạc."
         />
       </div>
       <div className="dy-container-full-vh">
@@ -95,12 +89,11 @@ export default function Home() {
             gác lại mọi khó khăn và bắt đầu lại
             mọi thứ."
         mainImgUrl={imgUrl}
-        subImgUrl="/rings.svg"
       />
       <div className="dy-container-full-vh">
         <YouTubeEmbed videoId="zJgVUvpaktw" />
       </div>
-      <div className="dy-container-full-vh">
+      <div className="dy-container-full-vh--special">
         <WeddingGuestBook />
       </div>
       <Cover
