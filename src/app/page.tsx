@@ -9,6 +9,7 @@ import ImageGallery from "../../components/image-gallery";
 import ContentBlock from "../../components/content-block";
 import Cover from "../../components/cover";
 import OpenLetter from "../../components/open-letter";
+import Timeline from "../../components/timeline";
 
 const imgUrl =
   "https://images.unsplash.com/photo-1520854221256-17451cc331bf?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D";
@@ -35,7 +36,7 @@ export default function Home() {
 Thay vì viết lại thông tin cá nhân, mình chọn ghi lại những suy nghĩ của mình tại đây.
 Mình đến với cuộc đời này, hạnh phúc vì được sống bên cạnh những người mình yêu thương.
 Mỗi ngày trôi qua là một mảnh ghép trong ký ức – đôi khi hiện rõ, đôi khi mờ nhạt – nhưng những ký ức ấy chắc chắn sẽ theo mình suốt những năm tháng cuộc đời.
-Cảm ơn bạn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
+Cảm ơn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
         />
       </div>
       <div className="dy-container-full-vh">
@@ -72,6 +73,9 @@ Cảm ơn bạn vì đã cùng mình xây dựng nên những ký ức đẹp đ
           header="Lễ Thành Hôn"
           address="Tại tư gia, 98 ấp Thạnh Lập, Thạnh Phú, Thạnh Hóa, Long An"
         />
+      </div>
+      <div className="dy-container-full-vh">
+        <Timeline />
       </div>
       <ContentBlock
         content="Sẽ hơi quá khi nói rằng chúng tôi

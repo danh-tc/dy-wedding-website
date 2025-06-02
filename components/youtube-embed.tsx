@@ -70,12 +70,12 @@ export default function YouTubeEmbed({
   return (
     <div className="dy-video" ref={containerRef}>
       <div className="dy-video__text">
-        Sẽ hơi quá khi nói rằng chúng tôi đã trải qua khá nhiều khó khăn trên
-        hành trình yêu của mình. Nhưng, mọi thử thách mà chúng tôi đã nếm trải
-        trong 5 năm qua chỉ làm cho mối quan hệ của chúng tôi thêm bền chặt.
-        Chúng tôi tin tưởng vào việc nhìn thấy những điều tốt đẹp nhất ở mọi thứ
-        và tiến về phía trước. Giờ đây, chúng tôi đã sẵn sàng gác lại mọi khó
-        khăn và bắt đầu lại mọi thứ.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
+        interdum pretium malesuada. Nam vitae nibh facilisis, posuere nibh eget,
+        bibendum nulla. Duis blandit porta sem ut congue. Duis at magna molestie
+        libero tincidunt accumsan in sit amet tortor. Sed tristique enim non
+        augue lobortis sodales. Sed mollis augue vitae facilisis lobortis.
+        Aenean non elementum tellus.
       </div>
       <div id="yt-player"></div>
     </div>
