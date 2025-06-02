@@ -1,0 +1,52 @@
+.dy-timeline {
+  background-image: url("/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 100vh;
+  gap: 5%;
+  .header-1 {
+    text-align: center;
+  }
+  ul {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+    li {
+      display: flex;
+      max-width: 410px;
+      justify-content: flex-start;
+      align-items: center;
+      gap: 20px;
+      font-size: 32px;
+      color: #6b513c;
+      font-weight: 600;
+    }
+  }
+
+  .img-container {
+    position: relative;
+    width: 117px;
+    height: 90px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    & {
+      height: 60vh;
+      ul {
+        li {
+          font-size: 24px;
+        }
+      }
+      .img-container {
+        width: 58.5px;
+        height: 45px;
+      }
+    }
+  }
+}
