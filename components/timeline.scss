@@ -5,7 +5,7 @@
   background-position: center;
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
+  justify-content: center;
   align-items: center;
   height: 100vh;
   gap: 5%;
@@ -37,7 +37,9 @@
 
   @media only screen and (max-width: 767px) {
     & {
-      height: 60vh;
+      padding: 100px 0;
+      padding-top: 0;
+      height: fit-content;
       ul {
         li {
           font-size: 24px;

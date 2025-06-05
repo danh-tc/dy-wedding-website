@@ -26,7 +26,10 @@ const mulish = Mulish({
 
 export const metadata: Metadata = {
   title: "Danh & Yen Wedding",
-  description: "Welcome to our love.",
+  description: "Welcome to our wedding!",
+  icons: {
+    icon: "/dylogo.png",
+  },
 };
 
 export default function RootLayout({

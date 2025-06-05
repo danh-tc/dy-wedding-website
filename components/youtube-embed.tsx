@@ -69,14 +69,7 @@ export default function YouTubeEmbed({
 
   return (
     <div className="dy-video" ref={containerRef}>
-      <div className="dy-video__text">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas
-        interdum pretium malesuada. Nam vitae nibh facilisis, posuere nibh eget,
-        bibendum nulla. Duis blandit porta sem ut congue. Duis at magna molestie
-        libero tincidunt accumsan in sit amet tortor. Sed tristique enim non
-        augue lobortis sodales. Sed mollis augue vitae facilisis lobortis.
-        Aenean non elementum tellus.
-      </div>
+      <div className="header-1">Xem lại những khoảnh khắc cùng tụi mình nhé!</div>
       <div id="yt-player"></div>
     </div>
   );
