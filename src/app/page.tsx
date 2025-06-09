@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <main className="dy-container">
       <Cover
-        backgroundUrl="/welcome-bg.png"
+        backgroundUrl="/welcome-desktop.png"
         backgroundMobileUrl="/firstpage-mobile.webp"
       />
       <div className="dy-container-full-vh">
@@ -74,6 +74,12 @@ Cảm ơn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
       <div className="dy-container-full-vh">
         <Timeline />
       </div>
+      <div className="dy-container-full-vh">
+        <YouTubeEmbed videoId="2UaFinW4NFQ" />
+      </div>
+      <div className="dy-container-full-vh--special">
+        <WeddingGuestBook />
+      </div>
       <ContentBlock
         content="Sẽ hơi quá khi nói rằng chúng tôi
             đã trải qua khá nhiều khó khăn
@@ -90,16 +96,6 @@ Cảm ơn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
             gác lại mọi khó khăn và bắt đầu lại
             mọi thứ."
         mainImgUrl={"/holdinghands.webp"}
-      />
-      <div className="dy-container-full-vh">
-        <YouTubeEmbed videoId="zJgVUvpaktw" />
-      </div>
-      <div className="dy-container-full-vh--special">
-        <WeddingGuestBook />
-      </div>
-      <Cover
-        backgroundUrl="/welcome-bg.png"
-        backgroundMobileUrl="/firstpage-mobile.webp"
       />
       <AudioPlayer src="/audio/Cant-Help-Falling-In-Love.mp3" />
     </main>
