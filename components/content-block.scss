@@ -84,6 +84,9 @@
   @media only screen and (max-width: 1023px) {
     .content {
       font-size: 18px;
+      background-color: rgba(255, 255, 255, 0.5);
+      padding: 10px;
+      border-radius: 5px;
     }
     .col-1 {
       padding-bottom: 250px;
