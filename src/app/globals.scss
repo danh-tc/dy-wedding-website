@@ -54,7 +54,7 @@ a {
   height: 100vh;
   width: 100%;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     height: fit-content;
   }
 }
@@ -90,7 +90,7 @@ a {
     font-weight: 600;
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     font-size: 16px;
     border-radius: 10px;
     min-width: unset;
@@ -100,10 +100,10 @@ a {
 .header-1 {
   font-family: var(--font-alex-brush);
   color: #6b513c;
-  font-size: 70px;
+  font-size: 62px;
   font-weight: 700;
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     font-size: 45px;
   }
 }

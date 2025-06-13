@@ -7,8 +7,8 @@
   gap: 80px;
   padding: 50px;
   height: 100vh;
-
   justify-content: center;
+  
   &__img-container {
     width: 40%;
     position: relative;
@@ -40,7 +40,7 @@
     }
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     & {
       flex-direction: column;
       gap: 30px;
@@ -51,7 +51,7 @@
 
       &__img-container {
         width: 100%;
-        min-height: 300px;
+        aspect-ratio: 3/4;
       }
 
       &__text-container {
@@ -61,7 +61,7 @@
         justify-content: flex-start;
 
         .description {
-          font-size: 16px;
+          font-size: 18px;
         }
       }
     }

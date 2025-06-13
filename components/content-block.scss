@@ -41,7 +41,6 @@
     height: fit-content;
   }
   .col-2 {
-    height: 100vh;
     width: 45%;
     order: 1;
     img {
@@ -82,15 +81,16 @@
       }
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     .content {
-      font-size: 16px;
+      font-size: 18px;
     }
     .col-1 {
       padding-bottom: 250px;
     }
     .col-2 {
-      height: 500px;
+      aspect-ratio: 3/4;
+      height: auto;
     }
   }
 }

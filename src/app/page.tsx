@@ -10,10 +10,12 @@ import ContentBlock from "../../components/content-block";
 import Cover from "../../components/cover";
 import OpenLetter from "../../components/open-letter";
 import Timeline from "../../components/timeline";
+import SpecialBlock from "../../components/special-block";
 
 export default function Home() {
   return (
     <main className="dy-container">
+      <SpecialBlock/>
       <Cover
         backgroundUrl="/welcome-desktop.png"
         backgroundMobileUrl="/firstpage-mobile.webp"

@@ -115,9 +115,9 @@
       }
     }
   }
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     & {
-      font-size: 16px;
+      font-size: 18px;
     }
     &__header {
       font-size: 50px;
@@ -125,20 +125,20 @@
     &__container {
       .error-msg,
       .thank-you-msg {
-        font-size: 16px;
+        font-size: 18px;
       }
       &__form {
         .form-control {
           .wishes-text,
           .name-text {
-            font-size: 16px;
+            font-size: 18px;
           }
         }
       }
       &__wishes {
         max-height: 491px;
         .wish {
-          font-size: 16px;
+          font-size: 18px;
         }
       }
     }

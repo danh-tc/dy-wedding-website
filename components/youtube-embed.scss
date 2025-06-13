@@ -21,7 +21,7 @@
     width: 40%;
   }
 
-  @media only screen and (max-width: 767px) {
+  @media only screen and (max-width: 1023px) {
     & {
       padding: 30px;
       flex-direction: column;
@@ -29,7 +29,7 @@
     }
     &__text {
       width: 100%;
-      font-size: 16px;
+      font-size: 18px;
     }
     #yt-player {
       width: 100%;

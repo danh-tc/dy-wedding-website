@@ -1,0 +1,155 @@
+.dy-special-block {
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  color: #6b513c;
+  background-image: url("/background-img.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  &__main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    height: 85%;
+
+    &--special {
+      height: 95%;
+      .row-1 {
+        height: 40% !important;
+      }
+      .row-2 {
+        height: 55% !important;
+      }
+    }
+
+    .row-1 {
+      display: flex;
+      justify-content: center;
+      height: 30%;
+      gap: 70px;
+
+      .img-container {
+        position: relative;
+        width: 100%;
+        max-width: 40%;
+        height: 100%;
+        aspect-ratio: 16/9;
+
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          object-position: 50%;
+          border-radius: 5px;
+        }
+      }
+      .content {
+        width: 60%;
+      }
+    }
+
+    .row-2 {
+      display: flex;
+      justify-content: center;
+      height: 40%;
+      gap: 70px;
+
+      .img-container {
+        width: 60%;
+        height: 100%;
+
+        display: flex;
+        align-items: flex-end;
+        gap: 10px;
+
+        .small-img {
+          width: calc(100% / 3);
+          position: relative;
+        }
+        .sm-1 {
+          height: 75%;
+        }
+        .sm-2 {
+          height: 100%;
+        }
+        .sm-3 {
+          height: 100%;
+        }
+
+        img {
+          border-radius: 5px;
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+          object-position: 50%;
+        }
+      }
+      .content {
+        width: 40%;
+      }
+    }
+  }
+
+  .header-1 {
+    height: fit-content;
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .sub-header {
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  p {
+    margin-top: 10px;
+    font-size: 20px;
+  }
+
+  @media only screen and (max-width: 1023px) {
+    & {
+      height: fit-content;
+      padding: 30px;
+    }
+
+    &__main-content {
+      .row-1,
+      .row-2 {
+        flex-direction: column;
+        width: 100%;
+        gap: 25px;
+
+        .img-container {
+          aspect-ratio: 4 / 3;
+          max-height: 40vh;
+          width: 100%;
+          height: auto;
+        }
+
+        .content {
+          width: 100%;
+          height: fit-content;
+        }
+      }
+      .row-1 {
+        flex-direction: column-reverse;
+      }
+    }
+
+    .sub-header {
+      font-weight: 700;
+      font-size: 20px;
+    }
+
+    p {
+      font-size: 18px;
+    }
+
+    .header-1 {
+      margin-bottom: 25px;
+    }
+  }
+}
