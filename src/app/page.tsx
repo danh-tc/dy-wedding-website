@@ -15,7 +15,6 @@ import SpecialBlock from "../../components/special-block";
 export default function Home() {
   return (
     <main className="dy-container">
-      <SpecialBlock/>
       <Cover
         backgroundUrl="/welcome-desktop.png"
         backgroundMobileUrl="/firstpage-mobile.webp"
@@ -76,6 +75,7 @@ Cảm ơn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
       <div className="dy-container-full-vh">
         <Timeline />
       </div>
+      <SpecialBlock />
       <div className="dy-container-full-vh">
         <YouTubeEmbed videoId="2UaFinW4NFQ" />
       </div>
