@@ -11,13 +11,14 @@ export default function OpenLetter() {
         <div>
           Thế là sau bao nhiêu ngày &quot;cùng nhau&quot;, cuối cùng chúng mình
           cũng quyết định về chung một nhà! Và hôn nhân là chuyện trăm năm, là
-          ngày trọng nhất cuộc đời... vậy nên Danh - Yến vô cùng hạnh phúc khi
-          được mời tất cả những người mình yêu quý đến chung vui, cùng chứng
-          kiến và chia sẻ niềm hạnh phúc đặc biệt này.
+          ngày trọng nhất cuộc đời... vậy nên <span>Danh - Yến</span> vô cùng
+          hạnh phúc khi được mời tất cả những người mình yêu quý đến chung vui,
+          cùng chứng kiến và chia sẻ niềm hạnh phúc đặc biệt này.
         </div>
         <br />
         <div>
-          Hãy cùng Danh - Yến viết nên những kỷ niệm đẹp đẽ và đáng nhớ nhé!
+          Hãy cùng <span>Danh - Yến</span> viết nên những kỷ niệm đẹp đẽ và đáng
+          nhớ nhé!
         </div>
       </div>
     </div>
