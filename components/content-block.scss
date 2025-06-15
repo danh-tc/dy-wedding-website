@@ -1,5 +1,5 @@
 .dy-content-block {
-  background-image: url("/background-img.png");
+  background-image: url("/background-img.webp");
   background-repeat: no-repeat;
   background-size: cover;
   color: #6b513c;
@@ -55,7 +55,7 @@
 
   @media only screen and (max-width: 1023px) {
     & {
-      background-image: url("/thankyou-end-mobile-bg.png");
+      background-image: url("/thankyou-end-mobile-bg.webp");
       padding: 30px;
       height: fit-content;
       flex-direction: column;

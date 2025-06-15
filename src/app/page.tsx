@@ -16,7 +16,7 @@ export default function Home() {
   return (
     <main className="dy-container">
       <Cover
-        backgroundUrl="/welcome-desktop.png"
+        backgroundUrl="/welcome-desktop.webp"
         backgroundMobileUrl="/firstpage-mobile.webp"
       />
       <div className="dy-container-full-vh">

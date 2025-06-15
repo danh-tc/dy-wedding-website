@@ -17,8 +17,8 @@ export default function WeddingInfo({
       className="dy-wedding-info"
       style={{
         backgroundImage: isFromGroom
-          ? 'url("/background-img-top-flower.png")'
-          : 'url("/background-img-bottom-flower.png")',
+          ? 'url("/background-img-top-flower.webp")'
+          : 'url("/background-img-bottom-flower.webp")',
       }}
     >
       <div className="dy-wedding-info__header header-1"> {header}</div>
