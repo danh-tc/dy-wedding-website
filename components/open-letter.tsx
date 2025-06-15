@@ -9,7 +9,7 @@ export default function OpenLetter() {
         <div>Gửi những người thân yêu nhất của Công Danh và Ngô Yến!</div>
         <br />
         <div>
-          Thế là sau bao nhiêu ngày &quot;cùng nhau &quot;, cuối cùng chúng mình
+          Thế là sau bao nhiêu ngày &quot;cùng nhau&quot;, cuối cùng chúng mình
           cũng quyết định về chung một nhà! Và hôn nhân là chuyện trăm năm, là
           ngày trọng nhất cuộc đời... vậy nên Danh - Yến vô cùng hạnh phúc khi
           được mời tất cả những người mình yêu quý đến chung vui, cùng chứng
