@@ -1,0 +1,65 @@
+.dy-video-player {
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/background-img.webp");
+  height: 100vh;
+  width: 100%;
+  padding: 50px;
+  display: flex;
+  gap: 100px;
+  color: #6b513c;
+
+  &__content {
+    width: 50%;
+
+    .sub-header {
+      font-size: 32px;
+      font-weight: 600;
+      margin-top: 200px;
+    }
+
+    p {
+      margin-top: 10px;
+      font-size: 20px;
+    }
+  }
+
+  &__video {
+    height: 100%;
+    width: 50%;
+    padding-left: 50px;
+    padding-right: 50px;
+
+    video {
+      border-radius: 10px;
+    }
+  }
+
+  @media only screen and (max-width: 1023px) {
+    & {
+      flex-direction: column;
+      gap: 30px;
+      height: fit-content;
+      padding: 30px;
+
+      &__content {
+        width: 100%;
+        .sub-header {
+          font-weight: 700;
+          font-size: 20px;
+          margin-top: unset;
+        }
+
+        p {
+          font-size: 18px;
+        }
+      }
+      &__video {
+        aspect-ratio: 9/16;
+        width: 100%;
+        padding: unset;
+      }
+    }
+  }
+}

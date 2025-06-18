@@ -4,13 +4,13 @@ import CountdownTimer from "../../components/countdown-timer";
 import WeddingInfo from "../../components/wedding-info";
 import WeddingGuestBook from "../../components/wedding-guest-book";
 import GroomBrideInfo from "../../components/groom-bride-info";
-import YouTubeEmbed from "../../components/youtube-embed";
 import ImageGallery from "../../components/image-gallery";
 import ContentBlock from "../../components/content-block";
 import Cover from "../../components/cover";
 import OpenLetter from "../../components/open-letter";
 import Timeline from "../../components/timeline";
 import SpecialBlock from "../../components/special-block";
+import VideoPlayer from "../../components/video-player";
 
 export default function Home() {
   return (
@@ -76,9 +76,7 @@ Cảm ơn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
         <Timeline />
       </div>
       <SpecialBlock />
-      <div className="dy-container-full-vh">
-        <YouTubeEmbed videoId="2UaFinW4NFQ" />
-      </div>
+      <VideoPlayer />
       <div className="dy-container-full-vh--special">
         <WeddingGuestBook />
       </div>
