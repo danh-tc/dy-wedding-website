@@ -17,7 +17,7 @@ export default function ContentBlock({
             <p className="header-1">
               Công Danh và Ngô Yến chân thành cảm ơn mọi người vì đã dành thời
               gian đọc câu chuyện của hai đứa và sự hiện diện của mọi người
-              chính
+              chính là lời chúc phúc tuyệt vời nhất.
             </p>
             <br />
             <p className="header-1">Hẹn gặp mọi người tại đám cưới nhé!</p>
