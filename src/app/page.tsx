@@ -42,7 +42,7 @@ Cảm ơn vì đã cùng mình xây dựng nên những ký ức đẹp đó."
           isGroom={false}
           imgUrl="/TED_5490.webp"
           header="Ngô Yến"
-          description="Ngô Yến là cô gái sinh năm 1999, tuy sinh ra và lớn lên ở Long An nhưng lại mang trong mình nét duyên của người Hải Dương. Yến là một cô nàng Marketing năng động, thích đọc sách, lang thang đó đây và chìm đắm trong những giai điệu âm nhạc."
+          description="Mình là cô gái mang tâm hồn lãng mạn, có chút thơ thẩn thích ngắm bầu trời xanh,  thả mình dưới những tán cây và nghe những bản nhạc nhẹ nhàng,..."
         />
       </div>
       <div className="dy-container-full-vh">
