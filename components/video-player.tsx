@@ -1,12 +1,12 @@
 "use client";
 
 import { useEffect, useRef } from "react";
-import { FaVolumeHigh } from "react-icons/fa6";
+// import { FaVolumeHigh } from "react-icons/fa6";
 import "./video-player.scss";
 export default function VideoPlayer() {
   const videoRef = useRef<HTMLVideoElement | null>(null);
-  const toolTipRef = useRef<HTMLDivElement>(null);
-  const unmuteBtn = useRef<HTMLButtonElement>(null);
+  // const toolTipRef = useRef<HTMLDivElement>(null);
+  // const unmuteBtn = useRef<HTMLButtonElement>(null);
 
   useEffect(() => {
     const videoEl = videoRef.current;
@@ -34,22 +34,22 @@ export default function VideoPlayer() {
     };
   }, []);
 
-  const handleUnmute = () => {
-    const video = videoRef.current;
-    if (video) {
-      video.muted = false;
-    }
-    if (!unmuteBtn.current) return;
-    hideToolTip();
-  };
+  // const handleUnmute = () => {
+  //   const video = videoRef.current;
+  //   if (video) {
+  //     video.muted = false;
+  //   }
+  //   if (!unmuteBtn.current) return;
+  //   hideToolTip();
+  // };
 
-  const hideToolTip = () => {
-    const toolTip = toolTipRef.current;
-    if (!toolTip) return;
-    toolTip.style.display = "none";
-    if (!unmuteBtn.current) return;
-    unmuteBtn.current.style.display = "none";
-  };
+  // const hideToolTip = () => {
+  //   const toolTip = toolTipRef.current;
+  //   if (!toolTip) return;
+  //   toolTip.style.display = "none";
+  //   if (!unmuteBtn.current) return;
+  //   unmuteBtn.current.style.display = "none";
+  // };
 
   return (
     <div className="dy-video-player">
