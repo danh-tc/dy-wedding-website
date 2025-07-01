@@ -73,13 +73,13 @@ export default function VideoPlayer() {
           width={"100%"}
           poster="/thumbnail.jpg"
         ></video>
-        <button ref={unmuteBtn} className="dy-button" onClick={handleUnmute}>
+        {/* <button ref={unmuteBtn} className="dy-button" onClick={handleUnmute}>
           <FaVolumeHigh color="#6b513c" />
         </button>
         <div className="tool-tip" ref={toolTipRef}>
           <div>Nhấn vào icon để  bên dưới để bật âm thanh nhé!</div>
           <button onClick={hideToolTip}>X</button>
-        </div>
+        </div> */}
       </div>
     </div>
   );
