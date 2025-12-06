@@ -40,7 +40,6 @@ function CountdownTimer() {
         <span>Công Danh</span>
         <span>&</span>
         <span>Ngô Yến</span>
-        {/* <div className="info info--mobile">Chúng mình đã về cùng nhà được:</div> */}
       </div>
       <div className="dy-countdown-timer__container">
         <div className="hard-timer">
