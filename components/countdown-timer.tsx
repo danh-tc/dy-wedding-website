@@ -15,18 +15,18 @@ function CountdownTimer() {
       const different = target.getTime() - now.getTime();
 
       const day = Math.floor(different / (1000 * 60 * 60 * 24));
-      setDays(day);
+      setDays(Math.abs(day));
 
       const hours = Math.floor(
         (different % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
       );
-      setHours(hours);
+      setHours(Math.abs(hours));
 
       const minutes = Math.floor((different % (1000 * 60 * 60)) / (1000 * 60));
-      setMinutes(minutes);
+      setMinutes(Math.abs(minutes));
 
       const seconds = Math.floor((different % (1000 * 60)) / 1000);
-      setSeconds(seconds);
+      setSeconds(Math.abs(seconds));
     }, 1000);
     return () => clearInterval(interval);
   });
@@ -34,17 +34,20 @@ function CountdownTimer() {
     <div className="dy-countdown-timer">
       <div className="dy-countdown-timer__header header-1 desktop">
         Công Danh & Ngô Yến
+        <div className="info info--desktop">Chúng mình đã về cùng nhà được</div>
       </div>
       <div className="dy-countdown-timer__header header-1 tablet">
         <span>Công Danh</span>
         <span>&</span>
         <span>Ngô Yến</span>
+        {/* <div className="info info--mobile">Chúng mình đã về cùng nhà được:</div> */}
       </div>
       <div className="dy-countdown-timer__container">
         <div className="hard-timer">
           <div className="first-row">09:00 Thứ hai</div>
           <div className="last-row">14.07.2025</div>
         </div>
+        
         <div className="img-container">
           <Image
             src={heart}
@@ -55,6 +58,7 @@ function CountdownTimer() {
             }}
           ></Image>
         </div>
+        <div className="info info--mobile">Chúng mình đã về cùng nhà được</div>
         <div className="dynamic-timer">
           <div className="days">
             <div className="number">{days.toString().padStart(2, "0")}</div>
